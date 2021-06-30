@@ -10,16 +10,16 @@ rm -fr tmp
 sync
 
 # configure systemd stuff
-systemctl disable eyesy-oflua.service  
-systemctl enable cherrypy.service  
-systemctl enable eyesy-pd.service  
-systemctl enable eyesy-python.service  
-systemctl enable splashscreen.service  
-systemctl enable ttymidi.service  
+systemctl enable eyesy-oflua.service
+systemctl enable cherrypy.service
+systemctl enable eyesy-pd.service
+systemctl python eyesy-python.service
+systemctl enable splashscreen.service
+systemctl enable ttymidi.service
 
 # networking started by eyesy-pd
 systemctl disable dhcpcd.service
 systemctl disable wpa_supplicant.service
-systemctl disable createap.service  
+systemctl disable createap.service
 
 systemctl daemon-reload
