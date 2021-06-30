@@ -13,7 +13,7 @@ sync
 systemctl enable eyesy-oflua.service
 systemctl enable cherrypy.service
 systemctl enable eyesy-pd.service
-systemctl python eyesy-python.service
+systemctl disable eyesy-python.service
 systemctl enable splashscreen.service
 systemctl enable ttymidi.service
 
